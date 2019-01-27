@@ -109,7 +109,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         Toast.makeText(MainActivity.this, "Signedout", Toast.LENGTH_SHORT).show();
-
+                        tvname.setText("");
+                        tvEmail.setText("");
+                        ivPic.setImageResource(R.drawable.rabit);
                     }
                 });
     }
